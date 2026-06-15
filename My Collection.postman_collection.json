@@ -1,0 +1,506 @@
+{
+  "info": {
+    "_postman_id": "cb4bb54f-fcae-44e2-bb47-dfe95f234b73",
+    "name": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55026352",
+    "_collection_link": "https://go.postman.co/collection/55026352-cb4bb54f-fcae-44e2-bb47-dfe95f234b73?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Online-bookstore-management-API",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"price\": 15.99,\r\n    \"inStock\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/books/6a2fcb1280802359eed947a2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "books",
+            "6a2fcb1280802359eed947a2"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "POST",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"1984\",\r\n    \"author\": \"George Orwell\",\r\n    \"genre\": \"Fiction\",\r\n    \"price\": 12.99,\r\n    \"publishedDate\": \"1949-06-08\",\r\n    \"inStock\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "books"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "274"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"112-tRVI12fBWo2N+4EGE2ctLnXImN0\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 15 Jun 2026 09:42:51 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"data\": {\n        \"title\": \"1984\",\n        \"author\": \"George Orwell\",\n        \"genre\": \"Fiction\",\n        \"price\": 12.99,\n        \"publishedDate\": \"1949-06-08T00:00:00.000Z\",\n        \"inStock\": true,\n        \"_id\": \"6a2fc91b80802359eed947a1\",\n        \"createdAt\": \"2026-06-15T09:42:51.291Z\",\n        \"updatedAt\": \"2026-06-15T09:42:51.291Z\",\n        \"__v\": 0\n    }\n}"
+        },
+        {
+          "name": "GET",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/books",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "books"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "527"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"20f-ulZ6bP4vcr/y43lFXdLllb6nn20\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 15 Jun 2026 09:47:07 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"6a2fc90e80802359eed947a0\",\n            \"title\": \"1984\",\n            \"author\": \"George Orwell\",\n            \"genre\": \"Fiction\",\n            \"price\": 12.99,\n            \"publishedDate\": \"1949-06-08T00:00:00.000Z\",\n            \"inStock\": true,\n            \"createdAt\": \"2026-06-15T09:42:38.552Z\",\n            \"updatedAt\": \"2026-06-15T09:42:38.552Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a2fc91b80802359eed947a1\",\n            \"title\": \"1984\",\n            \"author\": \"George Orwell\",\n            \"genre\": \"Fiction\",\n            \"price\": 12.99,\n            \"publishedDate\": \"1949-06-08T00:00:00.000Z\",\n            \"inStock\": true,\n            \"createdAt\": \"2026-06-15T09:42:51.291Z\",\n            \"updatedAt\": \"2026-06-15T09:42:51.291Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+        },
+        {
+          "name": "GET Book by Wrong ID 404Error",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/books/6a2fcb1280802359eed947a1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "books",
+                "6a2fcb1280802359eed947a1"
+              ]
+            }
+          },
+          "status": "Not Found",
+          "code": 404,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "80"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"50-KTbPCcYug+11R9r0p9jTV6IRig4\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 15 Jun 2026 09:54:18 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": false,\n    \"error\": \"Route not found: /api/books/6a2fcb1280802359eed947a1\"\n}"
+        },
+        {
+          "name": "GET Search by Author",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"1984\",\r\n    \"author\": \"George Orwell\",\r\n    \"genre\": \"Fiction\",\r\n    \"price\": 12.99,\r\n    \"publishedDate\": \"1949-06-08\",\r\n    \"inStock\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/books?aurthor=Orwell",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "books"
+              ],
+              "query": [
+                {
+                  "key": "aurthor",
+                  "value": "Orwell",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "1029"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"405-hjDBPygDkX6aazFZXMvPJjrCVL4\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 15 Jun 2026 09:59:43 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"6a2fc90e80802359eed947a0\",\n            \"title\": \"1984\",\n            \"author\": \"George Orwell\",\n            \"genre\": \"Fiction\",\n            \"price\": 12.99,\n            \"publishedDate\": \"1949-06-08T00:00:00.000Z\",\n            \"inStock\": true,\n            \"createdAt\": \"2026-06-15T09:42:38.552Z\",\n            \"updatedAt\": \"2026-06-15T09:42:38.552Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a2fc91b80802359eed947a1\",\n            \"title\": \"1984\",\n            \"author\": \"George Orwell\",\n            \"genre\": \"Fiction\",\n            \"price\": 12.99,\n            \"publishedDate\": \"1949-06-08T00:00:00.000Z\",\n            \"inStock\": true,\n            \"createdAt\": \"2026-06-15T09:42:51.291Z\",\n            \"updatedAt\": \"2026-06-15T09:42:51.291Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a2fcb1280802359eed947a2\",\n            \"title\": \"1984\",\n            \"author\": \"George Orwell\",\n            \"genre\": \"Fiction\",\n            \"price\": 12.99,\n            \"publishedDate\": \"1949-06-08T00:00:00.000Z\",\n            \"inStock\": true,\n            \"createdAt\": \"2026-06-15T09:51:14.384Z\",\n            \"updatedAt\": \"2026-06-15T09:51:14.384Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a2fcb1a80802359eed947a3\",\n            \"title\": \"1984\",\n            \"author\": \"George Orwell\",\n            \"genre\": \"Fiction\",\n            \"price\": 12.99,\n            \"publishedDate\": \"1949-06-08T00:00:00.000Z\",\n            \"inStock\": true,\n            \"createdAt\": \"2026-06-15T09:51:22.773Z\",\n            \"updatedAt\": \"2026-06-15T09:51:22.773Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+        },
+        {
+          "name": "Pagination",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"1984\",\r\n    \"author\": \"George Orwell\",\r\n    \"genre\": \"Fiction\",\r\n    \"price\": 12.99,\r\n    \"publishedDate\": \"1949-06-08\",\r\n    \"inStock\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/books?page =1&limit=5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "books"
+              ],
+              "query": [
+                {
+                  "key": "page ",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "limit",
+                  "value": "5",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "1029"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"405-hjDBPygDkX6aazFZXMvPJjrCVL4\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 15 Jun 2026 10:09:07 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"_id\": \"6a2fc90e80802359eed947a0\",\n            \"title\": \"1984\",\n            \"author\": \"George Orwell\",\n            \"genre\": \"Fiction\",\n            \"price\": 12.99,\n            \"publishedDate\": \"1949-06-08T00:00:00.000Z\",\n            \"inStock\": true,\n            \"createdAt\": \"2026-06-15T09:42:38.552Z\",\n            \"updatedAt\": \"2026-06-15T09:42:38.552Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a2fc91b80802359eed947a1\",\n            \"title\": \"1984\",\n            \"author\": \"George Orwell\",\n            \"genre\": \"Fiction\",\n            \"price\": 12.99,\n            \"publishedDate\": \"1949-06-08T00:00:00.000Z\",\n            \"inStock\": true,\n            \"createdAt\": \"2026-06-15T09:42:51.291Z\",\n            \"updatedAt\": \"2026-06-15T09:42:51.291Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a2fcb1280802359eed947a2\",\n            \"title\": \"1984\",\n            \"author\": \"George Orwell\",\n            \"genre\": \"Fiction\",\n            \"price\": 12.99,\n            \"publishedDate\": \"1949-06-08T00:00:00.000Z\",\n            \"inStock\": true,\n            \"createdAt\": \"2026-06-15T09:51:14.384Z\",\n            \"updatedAt\": \"2026-06-15T09:51:14.384Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6a2fcb1a80802359eed947a3\",\n            \"title\": \"1984\",\n            \"author\": \"George Orwell\",\n            \"genre\": \"Fiction\",\n            \"price\": 12.99,\n            \"publishedDate\": \"1949-06-08T00:00:00.000Z\",\n            \"inStock\": true,\n            \"createdAt\": \"2026-06-15T09:51:22.773Z\",\n            \"updatedAt\": \"2026-06-15T09:51:22.773Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+        },
+        {
+          "name": "UPDATING Book",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"price\": 15.99,\r\n    \"inStock\": false\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/books/6a2fcb1a80802359eed947a3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "books",
+                "6a2fcb1a80802359eed947a3"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "275"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"113-TywJW+UJVxWUC89wW7MWGn52Y2o\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 15 Jun 2026 10:13:08 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"6a2fcb1a80802359eed947a3\",\n        \"title\": \"1984\",\n        \"author\": \"George Orwell\",\n        \"genre\": \"Fiction\",\n        \"price\": 15.99,\n        \"publishedDate\": \"1949-06-08T00:00:00.000Z\",\n        \"inStock\": false,\n        \"createdAt\": \"2026-06-15T09:51:22.773Z\",\n        \"updatedAt\": \"2026-06-15T10:13:08.468Z\",\n        \"__v\": 0\n    }\n}"
+        },
+        {
+          "name": "DELETEING Book",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"price\": 15.99,\r\n    \"inStock\": false\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/books/6a2fcb1280802359eed947a2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "books",
+                "6a2fcb1280802359eed947a2"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "54"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"36-9Wsh+Ulh36Uhq6ylxG5pCkcdTlA\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 15 Jun 2026 10:18:02 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"success\": true,\n    \"message\": \"Book deleted successfully\"\n}"
+        }
+      ]
+    }
+  ]
+}
